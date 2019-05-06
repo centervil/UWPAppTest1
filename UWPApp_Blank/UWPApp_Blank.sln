@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UWPApp_Blank", "UWPApp_Blank\UWPApp_Blank.csproj", "{2FA58FBB-CDDC-4BBF-AB7A-03DA3962E3E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072} = {62C87D05-FDCC-4E89-94A1-C0C1BF287072}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIB_CppUwpDLL", "..\LIB_CppUwpDLL\LIB_CppUwpDLL\LIB_CppUwpDLL.vcxproj", "{62C87D05-FDCC-4E89-94A1-C0C1BF287072}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +46,22 @@ Global
 		{2FA58FBB-CDDC-4BBF-AB7A-03DA3962E3E0}.Release|x86.ActiveCfg = Release|x86
 		{2FA58FBB-CDDC-4BBF-AB7A-03DA3962E3E0}.Release|x86.Build.0 = Release|x86
 		{2FA58FBB-CDDC-4BBF-AB7A-03DA3962E3E0}.Release|x86.Deploy.0 = Release|x86
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Debug|ARM.ActiveCfg = Debug|ARM
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Debug|ARM.Build.0 = Debug|ARM
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Debug|ARM64.Build.0 = Debug|ARM64
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Debug|x64.ActiveCfg = Debug|x64
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Debug|x64.Build.0 = Debug|x64
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Debug|x86.ActiveCfg = Debug|Win32
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Debug|x86.Build.0 = Debug|Win32
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Release|ARM.ActiveCfg = Release|ARM
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Release|ARM.Build.0 = Release|ARM
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Release|ARM64.ActiveCfg = Release|ARM64
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Release|ARM64.Build.0 = Release|ARM64
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Release|x64.ActiveCfg = Release|x64
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Release|x64.Build.0 = Release|x64
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Release|x86.ActiveCfg = Release|Win32
+		{62C87D05-FDCC-4E89-94A1-C0C1BF287072}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
