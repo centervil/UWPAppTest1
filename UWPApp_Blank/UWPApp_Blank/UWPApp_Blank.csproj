@@ -163,6 +163,12 @@
       <Version>6.2.7</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary.csproj">
+      <Project>{2d6eb36a-d782-40da-8a21-d850815f4839}</Project>
+      <Name>LIB_CsUwpClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
