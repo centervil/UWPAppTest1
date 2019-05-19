@@ -137,8 +137,6 @@
     <None Include="UWPApp_Blank_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LIB_CsClassLibrary.dll" />
-    <Content Include="LIB_CppUwpDLLWin32.dll" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -162,18 +160,6 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.7</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\LIB_RuntimeComponent\LIB_RuntimeComponent\LIB_RuntimeComponent.csproj">
-      <Project>{d619f353-4133-4502-9fb4-7f0215f314f7}</Project>
-      <Name>LIB_RuntimeComponent</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary.csproj">
-      <Project>{2d6eb36a-d782-40da-8a21-d850815f4839}</Project>
-      <Name>LIB_CsUwpClassLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
