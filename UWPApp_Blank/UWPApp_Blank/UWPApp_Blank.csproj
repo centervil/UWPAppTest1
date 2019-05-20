@@ -137,8 +137,6 @@
     <None Include="UWPApp_Blank_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LIB_CsClassLibrary.dll" />
-    <Content Include="LIB_CppUwpDLLWin32.dll" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -164,15 +162,9 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\LIB_RuntimeComponent\LIB_RuntimeComponent\LIB_RuntimeComponent.csproj">
-      <Project>{d619f353-4133-4502-9fb4-7f0215f314f7}</Project>
-      <Name>LIB_RuntimeComponent</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary.csproj">
-      <Project>{2d6eb36a-d782-40da-8a21-d850815f4839}</Project>
-      <Name>LIB_CsUwpClassLibrary</Name>
+    <ProjectReference Include="..\..\LIB_NetStdClassLibrary\LIB_NetStdClassLibrary\LIB_NetStdClassLibrary.csproj">
+      <Project>{cb9989fe-d47c-4e2a-8187-9cf444a8c0c4}</Project>
+      <Name>LIB_NetStdClassLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
