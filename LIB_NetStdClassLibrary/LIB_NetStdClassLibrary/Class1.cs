@@ -11,21 +11,26 @@ namespace LIB_NetStdClassLibrary
     public class NativeMethods
     {
         [DllImport("LIB_CppClassLibrary", EntryPoint = "TestMethod")]
-        internal static extern Int32 TestMethod();
+        internal static extern Int32 TestMethodCpp();
 
         [DllImport("LIB_CppUwpDLL", EntryPoint = "TestMethod")]
-        internal static extern Int32 TestMethodUwp();
+        internal static extern Int32 TestMethodCppUwp();
 
         public static string InvokeCppDLL()
         {
-            int num = TestMethod();
+            int num = TestMethodCpp();
             return num.ToString();
         }
 
         public static string InvokeCppUwpDLL()
         {
-            int num = TestMethodUwp();
+            int num = TestMethodCppUwp();
             return num.ToString();
+        }
+
+        public static string InvokeCsDLL()
+        {
+            return LIB_CsClassLibrary.CsDllClass.TestMethod();
         }
 
     }
