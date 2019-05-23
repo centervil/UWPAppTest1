@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LIB_CsClassLibrary
 {
-    public class Class1
+    public class CsDllClass
     {
+        public static string TestMethod()
+        {
+            return "CsClassLibrary Called";
+        }
     }
 }
