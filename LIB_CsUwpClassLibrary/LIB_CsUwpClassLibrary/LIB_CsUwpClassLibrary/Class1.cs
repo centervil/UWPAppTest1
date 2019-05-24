@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LIB_CsUwpClassLibrary
 {
-    public class Class1
+    public class CsUwpDllClass
     {
+        public static string TestMethod()
+        {
+            return "CsUwpClassLibrary Called";
+        }
     }
 }

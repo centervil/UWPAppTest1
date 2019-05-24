@@ -33,5 +33,9 @@ namespace LIB_NetStdClassLibrary
             return LIB_CsClassLibrary.CsDllClass.TestMethod();
         }
 
+        public static string InvokeCsUwpDLL()
+        {
+            return LIB_CsUwpClassLibrary.CsUwpDllClass.TestMethod();
+        }
     }
 }

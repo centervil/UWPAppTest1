@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\LIB_CsClassLibrary\LIB_CsClassLibrary\LIB_CsClassLibrary.csproj" />
+    <ProjectReference Include="..\..\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary\LIB_CsUwpClassLibrary.csproj" />
   </ItemGroup>
 
 </Project>
