@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LIB_RuntimeComponent
 {
-    public sealed class Class1
+    public sealed class CsWinmdClass
     {
+        public static string TestMethod()
+        {
+            return "CsWinmdLibrary Called";
+        }
     }
 }
