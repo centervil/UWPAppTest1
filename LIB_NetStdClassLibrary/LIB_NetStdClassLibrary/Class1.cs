@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace LIB_NetStdClassLibrary
 {
-    public class Class1
+    public class NetStdClass
     {
         public static string TestMethod() { return "NetStandardDLL_Test"; }
     }

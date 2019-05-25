@@ -31,7 +31,7 @@ namespace UWPApp_Blank
 
         private async void TestButton_Click(object sender, RoutedEventArgs e)
         {
-            string Text = Class1.TestMethod();
+            string Text = NetStdClass.TestMethod();
             MessageDialog md = new MessageDialog(Text);
             await md.ShowAsync();
 
