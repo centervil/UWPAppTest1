@@ -14,10 +14,10 @@
     </Page.DataContext>
     <Grid>
         <Button
+            Command="{Binding InvokeTest}"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Content="Test"
-            Click="TestButton_Click">
+            Content="Test">
         </Button>
         <TextBlock
             HorizontalAlignment="Center"

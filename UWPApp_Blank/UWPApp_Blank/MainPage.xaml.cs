@@ -28,16 +28,5 @@ namespace UWPApp_Blank
         {
             this.InitializeComponent();
         }
-
-        private async void TestButton_Click(object sender, RoutedEventArgs e)
-        {
-            string Text = NetStdClass.TestMethod();
-            Text += "\n" + NativeMethods.InvokeCppDLL();      
-            Text += "\n" + NativeMethods.InvokeCppUwpDLL();
-            Text += "\n" + NativeMethods.InvokeCsDLL();
-
-            var vm = this.DataContext as MainPageViewModel;
-            vm.BindText = Text;
-        }
     }
 }
