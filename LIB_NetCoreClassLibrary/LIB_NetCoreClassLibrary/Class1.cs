@@ -2,7 +2,8 @@
 
 namespace LIB_NetCoreClassLibrary
 {
-    public class Class1
+    public class NetCoreClass
     {
+        public static string TestMethod() { return "NetCoreDLL is Called"; }
     }
 }
