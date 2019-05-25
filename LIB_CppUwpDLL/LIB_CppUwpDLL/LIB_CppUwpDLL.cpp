@@ -3,5 +3,5 @@
 
 extern "C" __declspec(dllexport) int TestMethod()
 {
-	return 10;
+	return 1;
 }
