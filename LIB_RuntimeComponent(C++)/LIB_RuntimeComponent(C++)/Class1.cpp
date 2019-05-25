@@ -4,11 +4,11 @@
 using namespace LIB_RuntimeComponent_C___;
 using namespace Platform;
 
-Class1::Class1()
+CppCxClass::CppCxClass()
 {
 }
 
-int LIB_RuntimeComponent_C___::Class1::TestMethod(void)
+int LIB_RuntimeComponent_C___::CppCxClass::TestMethod(void)
 {
 	return 100;
 }

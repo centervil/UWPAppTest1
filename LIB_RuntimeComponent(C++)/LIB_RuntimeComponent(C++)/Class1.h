@@ -2,10 +2,10 @@
 
 namespace LIB_RuntimeComponent_C___
 {
-    public ref class Class1 sealed
+    public ref class CppCxClass sealed
     {
     public:
-        Class1();
+		CppCxClass();
 		int TestMethod(void);
     };
 }
