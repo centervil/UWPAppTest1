@@ -34,6 +34,18 @@ namespace UWPApp_Blank
             string Text = Class1.TestMethod();
             MessageDialog md = new MessageDialog(Text);
             await md.ShowAsync();
+
+            Text = NativeMethods.InvokeCppDLL();
+            MessageDialog md2 = new MessageDialog(Text);
+            await md2.ShowAsync();
+
+            Text = NativeMethods.InvokeCppUwpDLL();
+            MessageDialog md3 = new MessageDialog(Text);
+            await md3.ShowAsync();
+
+            Text = NativeMethods.InvokeCsDLL();
+            MessageDialog md4 = new MessageDialog(Text);
+            await md4.ShowAsync();
         }
     }
 }

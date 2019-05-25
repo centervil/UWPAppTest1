@@ -137,6 +137,9 @@
     <None Include="UWPApp_Blank_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LIB_CppClassLibrary.dll" />
+    <Content Include="LIB_CppUwpDLL.dll" />
+    <Content Include="LIB_CsClassLibrary.dll" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
