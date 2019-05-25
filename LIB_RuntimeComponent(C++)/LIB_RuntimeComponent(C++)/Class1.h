@@ -6,5 +6,6 @@ namespace LIB_RuntimeComponent_C___
     {
     public:
         Class1();
+		int TestMethod(void);
     };
 }
