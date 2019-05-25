@@ -32,20 +32,12 @@ namespace UWPApp_Blank
         private async void TestButton_Click(object sender, RoutedEventArgs e)
         {
             string Text = NetStdClass.TestMethod();
-            MessageDialog md = new MessageDialog(Text);
-            await md.ShowAsync();
+            Text += "\n" + NativeMethods.InvokeCppDLL();      
+            Text += "\n" + NativeMethods.InvokeCppUwpDLL();
+            Text += "\n" + NativeMethods.InvokeCsDLL();
 
-            Text = NativeMethods.InvokeCppDLL();
-            MessageDialog md2 = new MessageDialog(Text);
-            await md2.ShowAsync();
-
-            Text = NativeMethods.InvokeCppUwpDLL();
-            MessageDialog md3 = new MessageDialog(Text);
-            await md3.ShowAsync();
-
-            Text = NativeMethods.InvokeCsDLL();
-            MessageDialog md4 = new MessageDialog(Text);
-            await md4.ShowAsync();
+            var vm = this.DataContext as MainPageViewModel;
+            vm.BindText = Text;
         }
     }
 }

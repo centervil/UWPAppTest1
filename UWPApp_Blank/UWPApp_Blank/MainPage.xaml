@@ -5,12 +5,27 @@
     xmlns:local="using:UWPApp_Blank"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:LIB_NetStdClassLibrary"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.DataContext>
+        <vm:MainPageViewModel/>
+    </Page.DataContext>
     <Grid>
-        <Button HorizontalAlignment="Center" VerticalAlignment="Center" Click="TestButton_Click">
-            Test
+        <Button
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Content="Test"
+            Click="TestButton_Click">
         </Button>
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Bottom"
+            Height="150"
+            Width="400"
+            Text="{Binding BindText}"
+            TextWrapping ="Wrap">
+        </TextBlock>
     </Grid>
 </Page>
