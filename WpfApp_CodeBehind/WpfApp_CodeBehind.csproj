@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B531875B-DEE9-4F33-BC48-5FD74E8016A6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WpfApp_CodeBehind</RootNamespace>
+    <RootNamespace>Blank_App</RootNamespace>
     <AssemblyName>WpfApp_CodeBehind</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -103,6 +103,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LIB_NetStdClassLibrary\LIB_NetStdClassLibrary\LIB_NetStdClassLibrary.csproj">
+      <Project>{cb9989fe-d47c-4e2a-8187-9cf444a8c0c4}</Project>
+      <Name>LIB_NetStdClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

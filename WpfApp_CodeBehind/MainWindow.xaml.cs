@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp_CodeBehind
+namespace Blank_App
 {
     /// <summary>
     /// MainWindow.xaml の相互作用ロジック
