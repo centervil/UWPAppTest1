@@ -7,7 +7,7 @@
     <ProjectGuid>{2FA58FBB-CDDC-4BBF-AB7A-03DA3962E3E0}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UWPApp_Blank</RootNamespace>
+    <RootNamespace>Blank_App</RootNamespace>
     <AssemblyName>UWPApp_Blank</AssemblyName>
     <DefaultLanguage>ja-JP</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>

@@ -17,7 +17,7 @@ using LIB_NetStdClassLibrary;
 
 // 空白ページの項目テンプレートについては、https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x411 を参照してください
 
-namespace UWPApp_Blank
+namespace Blank_App
 {
     /// <summary>
     /// それ自体で使用できる空白ページまたはフレーム内に移動できる空白ページ。
