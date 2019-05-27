@@ -3,7 +3,13 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System.Text;
 
+#if WINDOWS_UWP
+namespace LIB_CsUwpClassLibrary
+#else
+#if NET_STANDARD
 namespace LIB_NetStdClassLibrary
+#endif
+#endif
 {
     public class NativeMethods
     {
@@ -41,6 +47,7 @@ namespace LIB_NetStdClassLibrary
 
         public static string InvokeCsDLL()
         {
+#if NET_STANDARD
             try
             {
                 return LIB_CsClassLibrary.CsDllClass.TestMethod();
@@ -49,6 +56,8 @@ namespace LIB_NetStdClassLibrary
             {
                 return "CsClassLibrary is Not Called";
             }
+#endif
+            return "CsClassLibrary is Not Called";
         }
     }
 }

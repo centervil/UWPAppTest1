@@ -5,6 +5,14 @@
     <RootNamespace>LIB_NetStdClassLibrary</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>TRACE;NET_STANDARD</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE;NET_STANDARD</DefineConstants>
+  </PropertyGroup>
+
   <ItemGroup>
     <ProjectReference Include="..\..\LIB_CsClassLibrary\LIB_CsClassLibrary\LIB_CsClassLibrary.csproj" />
   </ItemGroup>

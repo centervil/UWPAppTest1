@@ -4,7 +4,13 @@ using System.ComponentModel;
 using System.Text;
 using System.Windows.Input;
 
+#if WINDOWS_UWP
+namespace LIB_CsUwpClassLibrary
+#else
+#if NET_STANDARD
 namespace LIB_NetStdClassLibrary
+#endif
+#endif
 {
     public class MainPageViewModel : INotifyPropertyChanged
     {
@@ -50,7 +56,13 @@ namespace LIB_NetStdClassLibrary
 
             public void Execute(object parameter)
             {
-                string Text = NetStdClass.TestMethod();
+                string Text = "";
+#if WINDOWS_UWP
+                Text = CsUwpDllClass.TestMethod();
+#endif
+#if NET_STANDARD
+                 Text = NetStdClass.TestMethod();
+#endif
                 Text += "\n" + NativeMethods.InvokeCppDLL();
                 Text += "\n" + NativeMethods.InvokeCppUwpDLL();
                 Text += "\n" + NativeMethods.InvokeCsDLL();
