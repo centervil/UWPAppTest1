@@ -8,24 +8,9 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <local:UserControlTest/>
-    <!--<Page.DataContext>
-        <vm:MainPageViewModel/>
-    </Page.DataContext>
-    <Grid>
-        <Button
-            Command="{Binding InvokeTest}"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Content="Test">
-        </Button>
-        <TextBlock
-            HorizontalAlignment="Center"
-            VerticalAlignment="Bottom"
-            Height="150"
-            Width="400"
-            Text="{Binding BindText}"
-            TextWrapping ="Wrap">
-        </TextBlock>
-    </Grid>-->
+    <StackPanel Orientation=" Horizontal ">
+        <local:UserControlCsUwp/>
+        <local:UserControlTest/>
+    </StackPanel>
+    
 </Page>

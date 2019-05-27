@@ -40,7 +40,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <OutputPath>bin\x86\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <NoWarn>;2008</NoWarn>
     <DebugType>full</DebugType>
     <UseVSHostingProcess>false</UseVSHostingProcess>
@@ -120,6 +120,12 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\..\..\LIB_NetStdClassLibrary\LIB_NetStdClassLibrary\MainPageViewModel.cs">
+      <Link>MainPageViewModel.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\LIB_NetStdClassLibrary\LIB_NetStdClassLibrary\NativeMethods.cs">
+      <Link>NativeMethods.cs</Link>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\LIB_CsUwpClassLibrary.rd.xml" />
@@ -128,6 +134,12 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.7</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\LIB_NetStdClassLibrary\LIB_NetStdClassLibrary\LIB_NetStdClassLibrary.csproj">
+      <Project>{cb9989fe-d47c-4e2a-8187-9cf444a8c0c4}</Project>
+      <Name>LIB_NetStdClassLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
