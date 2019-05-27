@@ -13,10 +13,10 @@ namespace LIB_NetStdClassLibrary
 {
     public class NativeMethods
     {
-        [DllImport("LIB_CppClassLibrary", EntryPoint = "TestMethod")]
+        [DllImport("LIB_CppClassLibraryWin32", EntryPoint = "TestMethod")]
         internal static extern Int32 TestMethodCpp();
 
-        [DllImport("LIB_CppUwpDLL", EntryPoint = "TestMethod")]
+        [DllImport("LIB_CppUwpDLLWin32", EntryPoint = "TestMethod")]
         internal static extern Int32 TestMethodCppUwp();
 
         public static string InvokeCppDLL()
@@ -56,8 +56,9 @@ namespace LIB_NetStdClassLibrary
             {
                 return "CsClassLibrary is Not Called";
             }
-#endif
+#elif WINDOWS_UWP
             return "CsClassLibrary is Not Called";
+#endif
         }
     }
 }

@@ -330,3 +330,7 @@ ASALocalRun/
 .mfractor/
 
 *.pri
+/UWPApp_Blank/UWPApp_Blank/LIB_CppUwpDLLWin32.lib
+/UWPApp_Blank/UWPApp_Blank/LIB_CppUwpDLLWin32.exp
+/UWPApp_Blank/UWPApp_Blank/LIB_CppClassLibraryWin32.lib
+/UWPApp_Blank/UWPApp_Blank/LIB_CppClassLibraryWin32.exp
