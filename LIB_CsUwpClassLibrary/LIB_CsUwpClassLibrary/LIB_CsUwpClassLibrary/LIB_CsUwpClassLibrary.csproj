@@ -140,6 +140,14 @@
       <Project>{cb9989fe-d47c-4e2a-8187-9cf444a8c0c4}</Project>
       <Name>LIB_NetStdClassLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\LIB_RuntimeComponent%28C++%29\LIB_RuntimeComponent%28C++%29\LIB_RuntimeComponent%28C++%29.vcxproj">
+      <Project>{132ea7f6-895a-4f32-bf1d-25b77d94a831}</Project>
+      <Name>LIB_RuntimeComponent%28C++%29</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\LIB_RuntimeComponent\LIB_RuntimeComponent\LIB_RuntimeComponent.csproj">
+      <Project>{d619f353-4133-4502-9fb4-7f0215f314f7}</Project>
+      <Name>LIB_RuntimeComponent</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

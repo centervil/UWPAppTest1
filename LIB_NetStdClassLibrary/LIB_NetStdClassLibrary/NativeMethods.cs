@@ -60,5 +60,38 @@ namespace LIB_NetStdClassLibrary
             return "CsClassLibrary is Not Called";
 #endif
         }
+
+        public static string InvokeWinmdDLL()
+        {
+#if WINDOWS_UWP
+            try
+            {
+                return LIB_RuntimeComponent.CsWinmdClass.TestMethod();
+            }
+            catch
+            {
+                return "CsWinmdLibrary is Not Called";
+            }
+#elif NET_STANDARD
+            return "CsWinmdLibrary is Not Called";
+#endif
+        }
+        public static string InvokeCppCxDLL()
+        {
+#if WINDOWS_UWP
+            try
+            {
+                //LIB_RuntimeComponent_C___.CppCxClass cx  = new LIB_RuntimeComponent_C___.CppCxClass();
+                LIB_RuntimeComponent_C___.CppCxClass.TestMethod();
+                return "CsCppCxDLL is Called";
+            }
+            catch
+            {
+                return "CsCppCxDLL is Not Called";
+            }
+#elif NET_STANDARD
+            return "CsCppCxDLL is Not Called";
+#endif
+        }
     }
 }

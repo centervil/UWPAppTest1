@@ -10,5 +10,5 @@ CppCxClass::CppCxClass()
 
 int LIB_RuntimeComponent_C___::CppCxClass::TestMethod(void)
 {
-	return 100;
+	return 1;
 }

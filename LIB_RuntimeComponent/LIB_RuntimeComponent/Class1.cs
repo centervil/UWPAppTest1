@@ -10,7 +10,7 @@ namespace LIB_RuntimeComponent
     {
         public static string TestMethod()
         {
-            return "CsWinmdLibrary Called";
+            return "CsWinmdLibrary is Called";
         }
     }
 }

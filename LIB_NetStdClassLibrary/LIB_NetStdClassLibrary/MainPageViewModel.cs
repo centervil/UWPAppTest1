@@ -66,6 +66,8 @@ namespace LIB_NetStdClassLibrary
                 Text += "\n" + NativeMethods.InvokeCppDLL();
                 Text += "\n" + NativeMethods.InvokeCppUwpDLL();
                 Text += "\n" + NativeMethods.InvokeCsDLL();
+                Text += "\n" + NativeMethods.InvokeWinmdDLL();
+                Text += "\n" + NativeMethods.InvokeCppCxDLL();
                 vm.BindText = Text;
             }
         }

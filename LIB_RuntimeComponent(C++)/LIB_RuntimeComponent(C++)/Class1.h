@@ -6,6 +6,6 @@ namespace LIB_RuntimeComponent_C___
     {
     public:
 		CppCxClass();
-		int TestMethod(void);
+		static int TestMethod(void);
     };
 }
